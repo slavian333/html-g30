@@ -1,0 +1,81 @@
+/* font */
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+html {
+    --anchor-color: #125231;
+    font-family: Roboto;
+    font-size: 100%;
+}
+
+body {
+    /* font-family: Roboto; */
+    font-size: 1.15rem;
+}
+
+/* navigation */
+
+html {
+    --anchor-color: #125231;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page-header {
+    color: red;
+}
+
+.brand {
+    color: #235423;
+}
+
+.navbar {
+
+}
+
+.navbar a {
+    color: var(--anchor-color);
+}
+
+.toolbar {
+
+}
+
+.test {
+    color: blueviolet;
+}
+
+/* hero */
+
+.hero {
+    background-color: #125231;
+}
+
+.hero h2 {
+    /* font-size: 1.15em; */
+    font-size: calc(1.345rem+1.15vm);
+    font-weight: 700;
+}
+
+.bg-hero{
+
+}
+
+/* footer */
+
+.footer-social a{
+    color: black;
+    font-size: 2em;
+}
+
+/* back-ground */
+
+.bg-cover{
+    background-size: cover !important;
+}
+
+.bg-centre{
+    background-position: center center !important;
+}

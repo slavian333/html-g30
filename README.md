@@ -1,1 +1,1 @@
-# 
+# Some text 2nd class
