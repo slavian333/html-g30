@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
-<body>
+<body style="background: url(images/background_2.avif);">
 
     <header class="page-header">Something
-        <a href="" class="brand">Something</a>
+        <a href="#" class="brand">Something</a>
         <nav class="navbar">
             <a href="catalog.html">catalog</a>
             <a href="about.html">list</a>
@@ -20,42 +20,100 @@
         </nav>
 
         <div class="toolbar">
-            <a href="catalog.html">catalog</a>
-            <a href="about.html">about</a>
-            <a href="contact.html">contact</a>
+            <a href="catalog.html" class="fas fa-heart">Wishlist</a>
+            <a href="about.html" class="fas fa-shopping-cart">Bascket</a>
+            <a href="contact.html" class="fas fa-eye">Recently watched</a>
         </div>
 
         
     </header>
 
-    <section class="hero bg-hero bg-cover bg-centre" style="background: url(images/3.jpg);">
-        <div class="container"></div>
-        <h2>Slava</h2>
-        <h3>Ukraini</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, natus. Aliquam dolorem accusantium veritatis a ullam, esse excepturi inventore repellat! Explicabo dolor, ipsum aut omnis ipsa fugiat at autem et!
-        </p>
+    <section id="hero" class="hero bg-hero bg-cover bg-centre" style="background: url(images/background_1.avif);">
+        <div class="container py-5 align-left px-5">
+            <h2>New <span>Inspiration </span> 2023</h2>
+            <h3>20% off on new season</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#"> Browse collections</a>
+        </div>
     </section>
 
-    <h1 class="test">Index</h1>
-    <nav>
+    <section id="catalog" class="catalog">
+        <header class="header">
+            <h2>Our <span>Products</span></h2>
 
-        <ul class="list">
-            <a href="catalog.html">catalog</a>
-            <a href="about.html">about</a>
-            <a href="contact.html">contact</a>
-        </ul>
-    </nav>
+            <div class="product-continer">
+                <article class="product">
+
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+
+                    <div class="image">
+                        <img src="images/5.jpeg" alt="">
+                    </div>
+                </article>
+            </div>
+
+            <div class="product">
+                <h2>Product name</h2>
+            </div>
+
+        </header>
+    </section>
 
     <div class="footer-social">
-        <a href=""><i class="fab fa-facebook"></i></a>
-        <a href=""><i class="fab fa-twitter"></i></a>
-        <a href=""><i class="fab fa-instagram"></i></a>
-        <a href=""><i class="fab fa-google-plus"></i></a>
+        <a href="https://uk-ua.facebook.com/"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/home?lang=ua"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.google.com/"><i class="fab fa-google-plus"></i></a>
     </div>
 
-    <h2>Slava</h2>
-    <h3>Ukraini</h3>
+    <footer class="bg-dark text-white">
+        <div class="container">
+            <div>
+                <h4>Services</h4>
+                <ul class="link-unstyle">
+                    <li>Help</li>
+                    <li>Locations</li>
+                    <li>Shops</li>
+                    <li>How to buy</li>
+                </ul>
+            </div>
 
-    <img src="images/5.jpeg">
+            <div>
+                <h4>Services</h4>
+                <ul class="link-unstyle">
+                    <li><a href="https://uk-ua.facebook.com/" class="social-link"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/home?lang=ua" class="social-link"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/" class="social-link"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.google.com/" class="social-link"><i class="fab fa-google-plus"></i></a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Services</h4>
+                <ul class="link-unstyle">
+                    <li>Help</li>
+                    <li>Locations</li>
+                    <li>Shops</li>
+                    <li>How to buy</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Services</h4>
+                <ul class="link-unstyle">
+                    <li>Help</li>
+                    <li>Locations</li>
+                    <li>Shops</li>
+                    <li>How to buy</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <h2>Slava Ukraini</h2>
 </body>
 </html>
