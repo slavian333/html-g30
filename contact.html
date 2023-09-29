@@ -4,17 +4,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact us</title>
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <style>
+        .grid-container{
+            display: grid;
+            /* grid-template-columns: 200px 25% 7vw auto 120px;
+            grid-template-columns: 1fr 25% 7vw auto 1fr;
+            grid-template-columns: 1fr 1fr 2fr 1fr 1fr; 
+            grid-template-columns: repeat(5, 1fr); */
+            
+            grid-template-areas: 
+                'header header header header'
+                'main main main sidebar'
+                'footer footer footer footer';
+            
+            gap: 1rem;
+        }
+
+        .box {
+            padding: 4ren;
+            color: white;
+            font-weight: 900;
+        }
+
+        .box1 {
+            background-color: red;
+            grid-area: header;
+        }
+
+        .box2 {
+            background-color: green;
+            grid-area: main;
+        }
+
+        .box3 {
+            background-color: gold;
+            grid-area: sidebar;
+        }
+
+        .box4 {
+            background-color: blue;
+            grid-area: footer;
+        }
+
+        .box5 {
+            background-color: magenta;
+        }
+    </style>
 </head>
-<body style="background: url(images/background_4.avif);">
+<body style="background: url(images/background_1.avif);">
+
+    <header class="page-header">
+        <a href="#" class="brand">Shopic</a>
+        <nav class="navbar">
+            <a href="catalog.html">catalog</a>
+            <a href="about.html">list</a>
+            <a href="contact.html">shop</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">contact</a>
+        </nav>
+
+        <div class="toolbar">
+            <a href="catalog.html" class="fas fa-heart"></a>
+            <a href="about.html" class="fas fa-shopping-cart"></a>
+            <a href="contact.html" class="fas fa-eye"></a>
+        </div>
+    </header>
+
     <h1 class="contact-title">Contact us</h1>
 
-    <img src="images/2.avif" alt="">
+    <!-- <section class="grid-container py-5 mb-3">
+        <div class="box box1">box1</div>
+        <div class="box box2">box2</div>
+        <div class="box box3">box3</div>
+        <div class="box box4">box4</div>
+        <div class="box box5">box5</div>
+    </section> -->
 
-    <nav class="nav-contact">
+    <section class="container py-5">
+        <div class="contact-wraper py-5">
+            <header class="contact-header mb-5">
+                <h1>Contact us</h1>
+            </header>
+
+            <div class="contact-main">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus deleniti officia molestias voluptate, quo neque porro quis dolore, qui accusamus dolores iste distinctio ratione architecto quaerat ullam, pariatur laudantium atque!
+            </div>
+
+            <div class="contact-sidebar">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt consequatur quasi temporibus, qui autem voluptatibus assumenda deleniti sunt ipsa soluta dicta delectus saepe voluptatum, quia asperiores quisquam dolore tempore adipisci?
+            </div>
+
+            <div class="contact-footer">
+                footer
+            </div>
+        </div>
+    </section>
+
+    <!-- <img src="images/2.avif" alt=""> -->
+
+    <!-- <nav class="nav-contact">
             <a href="catalog.html">index</a>
             <a href="about.html">about</a>
             <a href="index.html">contact</a>
-    </nav> 
+    </nav>  -->
+
+    <footer class="bg-dark text-white py-4" style="background-color: black;">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-4">
+                    <h4>Services</h4>
+                    <ul class="link-unstyle">
+                        <li>Help</li>
+                        <li>Locations</li>
+                        <li>Shops</li>
+                        <li>How to buy</li>
+                    </ul>
+                </div>
+
+                <div class="col-4">
+                    <h4>Social</h4>
+                    <ul class="link-unstyle">
+                        <li><a href="https://uk-ua.facebook.com/" class="social-link"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/home?lang=ua" class="social-link"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/" class="social-link"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.google.com/" class="social-link"><i class="fab fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-4">
+                    <h4>Services</h4>
+                    <ul class="link-unstyle">
+                        <li>Help</li>
+                        <li>Locations</li>
+                        <li>Shops</li>
+                        <li>How to buy</li>
+                    </ul>
+                </div>
+
+                <!-- <div class="col">
+                    <h4>Services</h4>
+                    <ul class="link-unstyle">
+                        <li>Help</li>
+                        <li>Locations</li>
+                        <li>Shops</li>
+                        <li>How to buy</li>
+                    </ul>
+                </div> -->
+            </div>
+
+            <div class="border-top pt-4"></div>
+                <div class="row">
+                    <div class="text-start col-6">
+                        <p class="small text-muted">&copy; 2023 All right reserved.</p>
+                    </div>
+
+                    <div class="text-end col-6">
+                        <p class="small text-muted">Designed by <a class="text-white" href="#">Shopic</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

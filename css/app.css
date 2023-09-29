@@ -60,9 +60,10 @@ h2>span {
 /* hero */
 
 .hero {
-    background-color: #125231;
+    /* background-color: #125231; */
     overflow-y: hidden;
     width: 100%;
+    margin-top: 10rem;
 }
 
 .hero h2 {
@@ -321,6 +322,12 @@ h4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
 }
 
 .page-header .brand {
@@ -342,8 +349,14 @@ h4 {
 .page-header .toolbar {
     font-size: 1.5rem;
     color: var(--anchor-color);
-    margin: 0 2rem;
+    margin: 0 .5rem;
     cursor: pointer;
+}
+
+.product-container .content{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit,minmax(20rem, 1fr));
 }
 
 .product-container .content{
@@ -368,8 +381,110 @@ h4 {
     overflow: hidden;
 }
 
-.product .iamge img{
+.product .image img{
     object-fit: cover;
     height: 100%;
     width: 100%;
 }
+
+/* contact form */
+
+.contact-wraper {
+    display: grid;
+    border: red 2px dashed;
+}
+
+.contact-header {
+    border: gold 2px dashed;
+    grid-row: 1; /* момер рядку. верхній */
+    grid-column: 1 / 4; /* протяжність рядка хедер. 3 1 по 4 колонку- вздовж всієї сторінки */
+}
+
+.contact-main {
+    border: green 2px dashed;
+    grid-row: 2 / 4;
+    grid-column: 1 / 3;
+}
+
+.contact-sidebar {
+    border: nlue 2px dashed;
+    grid-row: 2/4;
+    grid-column: 3 / 4;
+}
+
+.contact-footer {
+    border: magenta 2px dashed;
+    grid-row: 4;
+    grid-column: 1 / 4;
+}
+
+/* catalog */
+.grid-container {
+    display: grid;
+
+}
+
+.grid-container main {
+    border: green 2px dashed;
+    grid-row: auto;
+    grid-column: 2 / 5;
+}
+
+.grid-container aside {
+    border: blue 2px dashed;
+    grid-row: auto;
+    grid-column: 1 / 2;
+}
+
+/* position */
+
+.icons a {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 2rem;
+    margin-top: 1rem;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+.product {
+    position: relative;
+}
+
+.product .icons {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    z-index: 10;
+}
+
+.badge {
+    display: inline-block;
+    padding: .35rem .65rem;
+    font-size: .8em;
+    font-weight: 500;
+    line-height: 1;
+    color: white;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+}
+
+.product .badge {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 2;
+}
+
+.bg-sale {
+    background-color: red;
+}
+
+.bg-new {
+    background-color: red;
+}
+

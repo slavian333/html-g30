@@ -4,16 +4,208 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalog</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
 <body style="background: url(images/background_3.avif);">
-    <nav>
-        <ul>
-            <li><a href="index.html">index</a></li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="contact.html">contact</a></li>
-        </ul>
-    </nav>
 
-    <img src="images/1.jpeg" alt="">
+    <div class="grid-container">
+        <aside>
+            <main>
+
+            </main>
+        </aside>
+    </div>
+
+    <header class="page-header mb-3">
+        <a href="#" class="brand">Shopic</a>
+        <nav class="navbar">
+            <a href="catalog.html">catalog</a>
+            <a href="about.html">list</a>
+            <a href="contact.html">shop</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">contact</a>
+        </nav>
+
+        <div class="toolbar">
+            <a href="catalog.html" class="fas fa-heart"></a>
+            <a href="about.html" class="fas fa-shopping-cart"></a>
+            <a href="contact.html" class="fas fa-eye"></a>
+        </div>
+    </header>
+
+    <section id="hero" class="hero bg-hero bg-cover bg-centre py-5" style="background: url(images/background_1.avif);">
+        <div class="container py-5 align-left px-5">
+            <h2>New <span>Inspiration </span> 2023</h2>
+            <h3>20% off on new season</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#"> Browse collections</a>
+        </div>
+    </section>
+
+    <section id="catalog" class="catalog">
+        <header class="header">
+            <h2 class="text-center">Our <span>Products</span></h2>
+
+            <div class="product-container">
+                <article class="product">
+
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+
+                    <div class="image">
+                        <div class="badge bg-sale"></div>
+                        <img src="images/1.jpeg" alt="">
+                    </div>
+                </article>
+            </div>
+
+            <div class="content">
+                <h2>Product name</h2>
+                <div class="price">
+                    $123
+                </div>
+
+                <article class="content">
+
+                    <div class="icons">
+                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-eye"></a>
+                    </div>
+
+                    <div class="image">
+                        <div class="badge bg-new"></div>
+                        <img src="images/1.jpeg" alt="">
+                    </div>
+                </article>
+            </div>
+
+            <div class="content">
+                <h2>Product name</h2>
+                <div class="price">
+                    $123
+                </div>
+            </div>
+
+        </header>
+    </section>
+
+    <div class="footer-social">
+        <a href="https://uk-ua.facebook.com/"><i class="fab fa-facebook"></i></a>
+        <a href="https://twitter.com/home?lang=ua"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.google.com/"><i class="fab fa-google-plus"></i></a>
+    </div>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center py-5">
+                <div class="col-4 px-3">
+                    <div class="d-inline-block">
+                        <div class="icon">
+                            <div class="text-start mx-3">
+                                <h3 class="text-uppercase mb-1">Free shipping</h3>
+                                <p class="text-muted">Free shipping worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4 px-3">
+                    <div class="d-inline-block">
+                        <div class="icon">
+                            <div class="text-start mx-3">
+                                <h3 class="text-uppercase mb-1">Free shipping</h3>
+                                <p class="text-muted">Free shipping worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4 px-3">
+                    <div class="d-inline-block">
+                        <div class="icon">
+                            <div class="text-start mx-3">
+                                <h3 class="text-uppercase mb-1">Free shipping</h3>
+                                <p class="text-muted">Free shipping worldwide</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="divider" class="divider bg-fixed bg-cover bg-centre py-5" style="background: url(images/background_1.avif);">
+        <div class="container py-5 align-right px-5">
+            <h2>New <span>Inspiration </span> 2023</h2>
+            <h3>20% off on new season</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#"> Browse collections</a>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4" style="background: url(images/background_1.avif)">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-4">
+                    <h4>Services</h4>
+                    <ul class="link-unstyle">
+                        <li>Help</li>
+                        <li>Locations</li>
+                        <li>Shops</li>
+                        <li>How to buy</li>
+                    </ul>
+                </div>
+
+                <div class="col-4">
+                    <h4>Social</h4>
+                    <ul class="link-unstyle">
+                        <li><a href="https://uk-ua.facebook.com/" class="social-link"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/home?lang=ua" class="social-link"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/" class="social-link"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.google.com/" class="social-link"><i class="fab fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-4">
+                    <h4>Services</h4>
+                    <ul class="link-unstyle">
+                        <li>Help</li>
+                        <li>Locations</li>
+                        <li>Shops</li>
+                        <li>How to buy</li>
+                    </ul>
+                </div>
+
+                <!-- <div class="col">
+                    <h4>Services</h4>
+                    <ul class="link-unstyle">
+                        <li>Help</li>
+                        <li>Locations</li>
+                        <li>Shops</li>
+                        <li>How to buy</li>
+                    </ul>
+                </div> -->
+            </div>
+
+            <div class="border-top pt-4"></div>
+                <div class="row">
+                    <div class="text-start col-6">
+                        <p class="small text-muted">&copy; 2023 All right reserved.</p>
+                    </div>
+
+                    <div class="text-end col-6">
+                        <p class="small text-muted">Designed by <a class="text-white" href="#">Shopic</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
