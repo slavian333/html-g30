@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Grid</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="css/app.css">
+
+  <style>
+    /* Create a grid container for the product containers */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+      gap: 20px; /* Adjust the gap between grid items */
+    }
+
+    /* Style the individual product containers */
+    .product-container {
+      border: 1px solid #ddd; /* Add borders or any other styling you prefer */
+      padding: 20px;
+    }
+
+    /* Style the product images */
+    .product-container .image img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Style the product titles */
+    .product-container .content h2 {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    /* Style the product prices */
+    .product-container .content .price {
+      font-weight: bold;
+      color: #007bff; /* Change the color to your preference */
+    }
+  </style>
+</head>
+<body>
+  <div class="product-grid">
+    <div class="product-container">
+      <article class="product">
+        <div class="icons">
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+        <div class="image">
+            <div class="badge bg-sale"></div>
+            <img src="images/1.jpeg" alt="">
+        </div>
+        <div class="content">
+          <h2>Product name</h2>
+          <div class="price">$123</div>
+        </div>
+      </article>
+    </div>
+
+    <div class="product-container">
+      <article class="product">
+        <div class="icons">
+          <a href="#" class="fas fa-shopping-cart"></a>
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+        </div>
+        <div class="image">
+          <div class="badge bg-sale"></div>
+          <img src="images/1.jpeg" alt="">
+        </div>
+        <div class="content">
+          <h2>Product name</h2>
+          <div class="price">$123</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</body>
+</html>
