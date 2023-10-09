@@ -7,18 +7,14 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 </head>
-<body style="background: url(images/background_3.avif);">
+<body style="background-color: aliceblue;">
 
-    <div class="grid-container">
-        <aside>
-            <main>
-
-            </main>
-        </aside>
-    </div>
-
-    <header class="page-header mb-3">
+    <header class="page-header mb-3" style="background-color: aliceblue;">
         <a href="#" class="brand">Shopic</a>
+
+        <input type="checkbox" id="toggler">
+        <label for="toggler"><i class="fas fa-bars"></i></label>
+
         <nav class="navbar">
             <a href="catalog.html">catalog</a>
             <a href="about.html">list</a>
@@ -29,179 +25,170 @@
 
         <div class="toolbar">
             <a href="catalog.html" class="fas fa-heart"></a>
-            <a href="about.html" class="fas fa-shopping-cart"></a>
+            <a href="cart.html" class="fas fa-shopping-cart"></a>
             <a href="contact.html" class="fas fa-eye"></a>
         </div>
     </header>
 
-    <section id="hero" class="hero bg-hero bg-cover bg-centre py-5" style="background: url(images/background_1.avif);">
-        <div class="container py-5 align-left px-5">
-            <h2>New <span>Inspiration </span> 2023</h2>
-            <h3>20% off on new season</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="#"> Browse collections</a>
+    <section id="crumb" class="hero bg-light py-5 mb-3">
+        <div class="container py-5">
+            <div class="d-flex crumb">
+                <h2 class="text-uppercase">Catalog</h2>
+                <nav>
+                    <ul class="breadcrumb justify_content-end">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item active">Catalog</li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </section>
 
-    <div class="product-container">
-        <article class="product">
-
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-
-            <div class="image">
-                <div class="badge bg-sale"></div>
-                <img src="images/1.jpeg" alt="">
-            </div>
+    <section class="py-5 mb-3">
+        <div class="container catalog-container mb-3">
+            <main>
+                <div class="product-container">
+                    <article class="product">
     
-            <div class="content">
-                <h2>Product name</h2>
-                <div class="price">$123</div>
-            </div>
-        </article>
-
-        <article class="product">
-
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-
-            <div class="image">
-                <div class="badge bg-sale"></div>
-                <img src="images/1.jpeg" alt="">
-            </div>
-    
-            <div class="content">
-                <h2>Product name</h2>
-                <div class="price">$123</div>
-            </div>
-        </article>
-
-        <article class="product">
-
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-
-            <div class="image">
-                <div class="badge bg-sale"></div>
-                <img src="images/1.jpeg" alt="">
-            </div>
-    
-            <div class="content">
-                <h2>Product name</h2>
-                <div class="price">$123</div>
-            </div>
-        </article>
-
-        <article class="product">
-
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-
-            <div class="image">
-                <div class="badge bg-sale"></div>
-                <img src="images/1.jpeg" alt="">
-            </div>
-    
-            <div class="content">
-                <h2>Product name</h2>
-                <div class="price">$123</div>
-            </div>
-        </article>
-
-        <article class="product">
-
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-
-            <div class="image">
-                <div class="badge bg-sale"></div>
-                <img src="images/1.jpeg" alt="">
-            </div>
-    
-            <div class="content">
-                <h2>Product name</h2>
-                <div class="price">$123</div>
-            </div>
-        </article>
-
-        <article class="product">
-
-            <div class="icons">
-                <a href="#" class="fas fa-shopping-cart"></a>
-                <a href="#" class="fas fa-heart"></a>
-                <a href="#" class="fas fa-eye"></a>
-            </div>
-
-            <div class="image">
-                <div class="badge bg-sale"></div>
-                <img src="images/1.jpeg" alt="">
-            </div>
-    
-            <div class="content">
-                <h2>Product name</h2>
-                <div class="price">$123</div>
-            </div>
-        </article>
-    </div>  
-
-    <div class="footer-social">
-        <a href="https://uk-ua.facebook.com/"><i class="fab fa-facebook"></i></a>
-        <a href="https://twitter.com/home?lang=ua"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-        <a href="https://www.google.com/"><i class="fab fa-google-plus"></i></a>
-    </div>
-
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="row text-center py-5">
-                <div class="col-4 px-3">
-                    <div class="d-inline-block">
-                        <div class="icon">
-                            <div class="text-start mx-3">
-                                <h3 class="text-uppercase mb-1">Free shipping</h3>
-                                <p class="text-muted">Free shipping worldwide</p>
-                            </div>
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
                         </div>
-                    </div>
-                </div>
-
-                <div class="col-4 px-3">
-                    <div class="d-inline-block">
-                        <div class="icon">
-                            <div class="text-start mx-3">
-                                <h3 class="text-uppercase mb-1">Free shipping</h3>
-                                <p class="text-muted">Free shipping worldwide</p>
-                            </div>
+    
+                        <div class="image">
+                            <div class="badge bg-sale"></div>
+                            <img src="images/1.jpeg" alt="">
                         </div>
-                    </div>
-                </div>
-
-                <div class="col-4 px-3">
-                    <div class="d-inline-block">
-                        <div class="icon">
-                            <div class="text-start mx-3">
-                                <h3 class="text-uppercase mb-1">Free shipping</h3>
-                                <p class="text-muted">Free shipping worldwide</p>
-                            </div>
+                
+                        <div class="content">
+                            <h2>Product name</h2>
+                            <div class="price">$123</div>
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </article>
+    
+                    <article class="product">
+    
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+    
+                        <div class="image">
+                            <div class="badge bg-sale"></div>
+                            <img src="images/1.jpeg" alt="">
+                        </div>
+                
+                        <div class="content">
+                            <h2>Product name</h2>
+                            <div class="price">$123</div>
+                        </div>
+                    </article>
+    
+                    <article class="product">
+    
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+    
+                        <div class="image">
+                            <div class="badge bg-sale"></div>
+                            <img src="images/1.jpeg" alt="">
+                        </div>
+                
+                        <div class="content">
+                            <h2>Product name</h2>
+                            <div class="price">$123</div>
+                        </div>
+                    </article>
+    
+                    <article class="product">
+    
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+    
+                        <div class="image">
+                            <div class="badge bg-sale"></div>
+                            <img src="images/1.jpeg" alt="">
+                        </div>
+                
+                        <div class="content">
+                            <h2>Product name</h2>
+                            <div class="price">$123</div>
+                        </div>
+                    </article>
+    
+                    <article class="product">
+    
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+    
+                        <div class="image">
+                            <div class="badge bg-sale"></div>
+                            <img src="images/1.jpeg" alt="">
+                        </div>
+                
+                        <div class="content">
+                            <h2>Product name</h2>
+                            <div class="price">$123</div>
+                        </div>
+                    </article>
+    
+                    <article class="product">
+    
+                        <div class="icons">
+                            <a href="#" class="fas fa-shopping-cart"></a>
+                            <a href="#" class="fas fa-heart"></a>
+                            <a href="#" class="fas fa-eye"></a>
+                        </div>
+    
+                        <div class="image">
+                            <div class="badge bg-sale"></div>
+                            <img src="images/1.jpeg" alt="">
+                        </div>
+                
+                        <div class="content">
+                            <h2>Product name</h2>
+                            <div class="price">$123</div>
+                        </div>
+                    </article>
+                </div>  
+            </main>
+
+            <aside class="sidebar">
+                <h2 class="text-uppercase mb-3">Categories</h2>
+
+                <div class="py-2 px-4 bg-dark text-white mb-3">Fashion</div>
+                <ul class="list-unstyle categories">
+                    <li><a class="reset-anchor" href="#">T-Shirts</a></li>
+                    <li><a class="reset-anchor" href="#">T-Shirts</a></li>
+                    <li><a class="reset-anchor" href="#">T-Shirts</a></li>
+                    <li><a class="reset-anchor" href="#">T-Shirts</a></li>
+                    <li><a class="reset-anchor" href="#">T-Shirts</a></li>
+                    <li><a class="reset-anchor" href="#">T-Shirts</a></li>
+                    <li><a class="reset-anchor" href="#">T-Shirts</a></li>
+                </ul>
+
+                <div class="py-2 px-4 bg-dark text-white mb-3">Art</div>
+                <ul class="list-unstyle categories">
+                    <li><a class="reset-anchor" href="#">T-Shirts</a></li>
+                    <li><a class="reset-anchor" href="#">T-Shirts</a></li>
+                    <li><a class="reset-anchor" href="#">T-Shirts</a></li>
+                    <li><a class="reset-anchor" href="#">T-Shirts</a></li>
+                    <li><a class="reset-anchor" href="#">T-Shirts</a></li>
+                    <li><a class="reset-anchor" href="#">T-Shirts</a></li>
+                    <li><a class="reset-anchor" href="#">T-Shirts</a></li>
+                </ul>
+            </aside>
         </div>
     </section>
 
@@ -214,10 +201,10 @@
         </div>
     </section>
 
-    <footer class="bg-dark text-white py-4" style="background: url(images/background_1.avif)">
+    <footer class="bg-dark text-white py-4" style="background-color: black;">
         <div class="container py-4">
             <div class="row">
-                <div class="col-4">
+                <div class="col-lg-4">
                     <h4>Services</h4>
                     <ul class="link-unstyle">
                         <li>Help</li>
@@ -227,44 +214,34 @@
                     </ul>
                 </div>
 
-                <div class="col-4">
+                <div class="col-lg-4">
+                    <h4>Services</h4>
+                    <ul class="link-unstyle">
+                        <li>Help</li>
+                        <li>Locations</li>
+                        <li>Shops</li>
+                        <li>How to buy</li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4">
                     <h4>Social</h4>
                     <ul class="link-unstyle">
-                        <li><a href="https://uk-ua.facebook.com/" class="social-link"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="https://twitter.com/home?lang=ua" class="social-link"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="https://www.instagram.com/" class="social-link"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="https://www.google.com/" class="social-link"><i class="fab fa-google-plus"></i></a></li>
+                        <li><a href="https://uk-ua.facebook.com/" class="social-link"><i class="fab fa-facebook"></i>Facebook</a></li>
+                        <li><a href="https://twitter.com/home?lang=ua" class="social-link"><i class="fab fa-twitter"></i>Twitter</a></li>
+                        <li><a href="https://www.instagram.com/" class="social-link"><i class="fab fa-instagram"></i>IG</a></li>
+                        <li><a href="https://www.google.com/" class="social-link"><i class="fab fa-google-plus"></i>Google</a></li>
                     </ul>
                 </div>
-
-                <div class="col-4">
-                    <h4>Services</h4>
-                    <ul class="link-unstyle">
-                        <li>Help</li>
-                        <li>Locations</li>
-                        <li>Shops</li>
-                        <li>How to buy</li>
-                    </ul>
-                </div>
-
-                <!-- <div class="col">
-                    <h4>Services</h4>
-                    <ul class="link-unstyle">
-                        <li>Help</li>
-                        <li>Locations</li>
-                        <li>Shops</li>
-                        <li>How to buy</li>
-                    </ul>
-                </div> -->
             </div>
 
             <div class="border-top pt-4"></div>
                 <div class="row">
-                    <div class="text-start col-6">
+                    <div class="text-start col-lg-6">
                         <p class="small text-muted">&copy; 2023 All right reserved.</p>
                     </div>
 
-                    <div class="text-end col-6">
+                    <div class="text-end col-lg-6">
                         <p class="small text-muted">Designed by <a class="text-white" href="#">Shopic</a></p>
                     </div>
                 </div>
@@ -272,5 +249,6 @@
         </div>
     </footer>
 
+    <!-- <h2>Slava Ukraini</h2> -->
 </body>
 </html>

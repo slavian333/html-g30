@@ -1,6 +1,11 @@
-/* font */
+/* common */
 
   @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+    --ancor-color: #130f13;
+    --active-color: salmon;
+}
 
 html {
     --anchor-color: #125231;
@@ -772,7 +777,16 @@ h4 {
     position: absolute;
     top: 1rem;
     right: 1.5rem;
-    z-index: 10;
+    z-index: -10; /* not displayed without hover*/
+}
+
+.product:hover .icons{
+    z-index: 10; /* icons are displayed without hover*/
+}
+
+.product .icons a:hover {
+    color: white;
+    background-color: salmon;
 }
 
 .badge {
@@ -937,12 +951,6 @@ textarea.form-controll {
     padding: .5rem 2rem;
 }
 
-.table input[type=number] {
-    max-width: 3rem;
-    height: 1.5rem;
-    border: #ced4da 1px solid;
-}
-
 .remove {
     color: red;
 }
@@ -1067,4 +1075,131 @@ textarea.form-controll {
         flex: auto;
         width: 100%;
     }
+}
+
+/* pseudo class */
+
+.table input[type=number] {
+    max-width: 3.5rem;
+    height: 2.5rem;
+    border: #ced4da 1px solid;
+}
+
+.qty input:in-range {
+    background-color: greenyellow;
+}
+
+.qty input:out-of-range {
+    background-color: rgba(255, 0, 0, .25);
+    border: 1px solid red;
+}
+
+.page-header .toolbar a:hover {
+    color: var(--active-color);
+}
+
+.btn-send:hover {
+    background-color: white;
+    color: var(--active-color);
+    border-color: salmon;
+    border-width: 2px;
+    font-weight: 600;
+}
+
+.page-header .navbar a:hover {
+    color: var(--active-color);
+}
+
+.navbar a {
+    position: relative; /*underline one tab per hover*/
+}
+
+.page-header .navbar a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid var(--active-color);
+}
+
+.page-header .navbar a:hover::after {
+    width: 100%;
+}
+
+footer ul li.footer-link{
+    position: relative;
+}
+
+li.footer-link::before {
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "\f152";
+    font-family: "Font awesome 5 Free";
+    color: white;
+    opacity: 0;
+}
+
+li.footer-link:hover::before {
+    opacity: 1;
+}
+
+li.footer-link:hover{
+    padding-left: 1.5rem;
+    color: wheat;
+}
+
+.table tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, .025);
+}
+
+.table tr:hover {
+    border: #eed8a5 1px double;
+}
+
+.catalog-container {
+    display: flex;
+}
+
+.catalog-container main {
+    flex: 3;
+    padding: .5rem;
+
+}
+
+.catalog-container aside {
+    flex: 1;
+    padding: .5rem;
+    border-left: 1px dotted rgba(0, 0, 0, .025);
+}
+
+ul.categories a {
+    text-decoration: none;
+    color: var(--ancor-color);
+    font-size: 1.2rem;
+}
+
+ul.categories a:hover {
+    color: var(--active-color);
+}
+
+ul.catagories li:nth-child(even) {
+    background-color: rgba(0,0,0,0.025);
+}
+
+.svg-icon {
+    width: 32px;
+    height: 32px;
+    vertical-align: text-bottom;
+    stroke-width: 3;
+    stroke: #130f40;
+}
+
+.svg-icon:hover {
+    stroke: red;
 }
