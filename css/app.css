@@ -93,6 +93,17 @@ h2>span {
     text-align: center;
 }
 
+.text-grey {
+    color: grey;
+    opacity: .5;
+}
+
+.not-empty {
+    color:red;
+    opacity:1;
+    font-weight:700
+}
+
 /* footer */
 
 .footer-social a{
@@ -650,7 +661,7 @@ h4 {
 }
 
 .page-header .brand {
-    color: black;
+    color: salmon;
     font-size: 2rem;
     font-weight: 700;
 }
@@ -819,7 +830,7 @@ h4 {
 }
 
 .bg-new {
-    background-color: red;
+    background-color: green;
 }
 
 /* Contact form */

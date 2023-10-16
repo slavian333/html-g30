@@ -53,9 +53,9 @@
         </nav>
 
         <div class="toolbar">
-            <a href="catalog.html" class="far fa-heart"></a>
-            <a href="cart.html" class="fas fa-cart-plus"></a>
-            <a href="#!" onclick="window.login.showModal()" class="fas fa-user"></a>
+            <a href="wishlist.html" class="far fa-heart"></a><span class="text-grey">(<span id="total_in_wishlist">0</span>)</span>
+            <a href="cart.html" class="fas fa-cart-plus"></a><span class="text-grey">(<span id="total_in_cart">0</span>)</span>
+            <a href="#!" onclick="window.login.showModal()" class="far fa-user"></a>
         </div>
     </header>
 
@@ -189,13 +189,13 @@
                 <article class="product">
 
                     <div class="icons">
-                        <a href="#" class="fas fa-shopping-cart"></a>
-                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="fas fa-shopping-cart add-to-cart"></a>
+                        <a href="#!" class="fas fa-heart add-to-wishkist"></a>
                         <a href="#productView" class="fas fa-eye"></a>
                     </div>
 
                     <div class="image">
-                        <div class="badge bg-sale"></div>
+                        <div class="badge bg-sale">Sale</div>
                         <img src="images/1.jpeg" alt="">
                     </div>
             
@@ -214,7 +214,7 @@
                     </div>
 
                     <div class="image">
-                        <div class="badge bg-sale"></div>
+                        <div class="badge bg-sale">Sale</div>
                         <img src="images/1.jpeg" alt="">
                     </div>
             
@@ -233,7 +233,7 @@
                     </div>
 
                     <div class="image">
-                        <div class="badge bg-sale"></div>
+                        <div class="badge bg-new">New</div>
                         <img src="images/1.jpeg" alt="">
                     </div>
             
@@ -252,7 +252,7 @@
                     </div>
 
                     <div class="image">
-                        <div class="badge bg-sale"></div>
+                        <div class="badge bg-new">New</div>
                         <img src="images/1.jpeg" alt="">
                     </div>
             
@@ -271,7 +271,7 @@
                     </div>
 
                     <div class="image">
-                        <div class="badge bg-sale"></div>
+                        <div class="badge bg-sale">Sale</div>
                         <img src="images/1.jpeg" alt="">
                     </div>
             
@@ -290,7 +290,7 @@
                     </div>
 
                     <div class="image">
-                        <div class="badge bg-sale"></div>
+                        <div class="badge bg-new">New</div>
                         <img src="images/1.jpeg" alt="">
                     </div>
             
@@ -495,6 +495,8 @@
             </main>
         </div>
     </dialog>
+
+    <script src="js/app.js"></script>
 
 </body>
 </html>
